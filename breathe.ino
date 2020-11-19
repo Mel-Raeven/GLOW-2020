@@ -3,7 +3,7 @@
 #define stepPin 3
 #define LED_PIN 6
 #define LED_COUNT 30
-#define stepsPerRevolution 400
+#define stepsPerRevolution 370
 int breathSpeed = 2000;
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_RGBW);
 
@@ -21,16 +21,16 @@ void loop() {
   int ledBrightness = 0;
 //  int breathSpeed = 2000;
   digitalWrite(dirPin, HIGH);
-
-  int number = rand() % 100;
-  if (number > 50) {
-    breathSpeed += 100;
-  } else {
-    breathSpeed -= 100;
-  };
-  if (breathSpeed > 3000) {
-    breathSpeed == 2000;
-  };
+//
+//  int number = rand() % 100;
+//  if (number > 50) {
+//    breathSpeed += 100;
+//  } else {
+//    breathSpeed -= 100;
+//  };
+//  if (breathSpeed > 3000) {
+//    breathSpeed == 2000;
+//  };
 
   //rotation forward
   for(int i = 0; i < stepsPerRevolution; i++)

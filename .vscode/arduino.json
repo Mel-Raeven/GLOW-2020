@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:uno",
+    "programmer": "AVRISP mkII",
+    "port": "/dev/tty.usbmodem14101",
+    "sketch": "breathe.ino"
+}
